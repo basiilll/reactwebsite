@@ -27,7 +27,7 @@ npm -v
 
    ```bash
    git clone https://github.com/basiilll/reactwebsite.git
-   cd ecommerce-basic
+   cd reactwebsite
    ```
 
 2. **Install dependencies** 
