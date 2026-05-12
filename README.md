@@ -26,7 +26,7 @@ npm -v
 1. **Clone** the repository (or copy the project folder).
 
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/basiilll/reactwebsite.git
    cd ecommerce-basic
    ```
 
