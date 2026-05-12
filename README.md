@@ -1,75 +1,49 @@
-# Ecommerce demo — React + JavaScript + Vite
+# Northline Goods - ecommerce demo
 
-Demo shop (React Router, Tailwind CSS v4, cart persisted in `localStorage`).
+A small **React** storefront built with **Vite**, **JavaScript**, **Tailwind CSS v4**, and **React Router**. It includes a static product catalog, a shopping cart persisted in the browser (`localStorage`), and a simple checkout flow (demo only).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# [View the page live](https://reactwebsite-olive.vercel.app/)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+   ```markdown
+   ![Browsing the shop](./public/preview.gif)
+   ```
 
-## React Compiler
+## Prerequisites
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Node.js** 20+ (LTS recommended) — [https://nodejs.org](https://nodejs.org)
+- **npm** (comes with Node)
 
-## Expanding the ESLint configuration
+Check versions:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+node -v
+npm -v
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting started 
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone** the repository (or copy the project folder).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+   ```bash
+   git clone <your-repo-url>
+   cd ecommerce-basic
+   ```
+
+2. **Install dependencies** 
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the dev server** 
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the URL Vite prints — usually **http://localhost:5173**
+
+5. Deploy the **`dist`** folder to a static host, for example [Vercel](https://vercel.com), [Netlify](https://netlify.com), or [Cloudflare Pages](https://pages.cloudflare.com).  
+   Most hosts connect to GitHub and deploy on every push, or accept a drag-and-drop of `dist`.
+
