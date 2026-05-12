@@ -44,6 +44,4 @@ npm -v
 
 4. Open the URL Vite prints — usually **http://localhost:5173**
 
-5. Deploy the **`dist`** folder to a static host, for example [Vercel](https://vercel.com), [Netlify](https://netlify.com), or [Cloudflare Pages](https://pages.cloudflare.com).  
-   Most hosts connect to GitHub and deploy on every push, or accept a drag-and-drop of `dist`.
 
