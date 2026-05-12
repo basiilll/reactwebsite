@@ -5,9 +5,9 @@ A small **React** storefront built with **Vite**, **JavaScript**, **Tailwind CSS
 # [View the page live](https://reactwebsite-olive.vercel.app/)
 
 
-   ```markdown
+
    ![Browsing the shop](./public/preview.gif)
-   ```
+   
 
 ## Prerequisites
 
